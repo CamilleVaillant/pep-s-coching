@@ -26,6 +26,9 @@ h4{
     text-decoration: none;
     list-style: none;
 }
+p{
+    color: grey;
+}
 
 /* header */
 
@@ -91,7 +94,9 @@ nav ul li:not(:last-child){
 
                 /* 1er partie */
 
-
+#approche{
+    margin:0 10% ;
+}
 #approche h3{
     text-align: center;
     font-size: 2rem;
@@ -120,8 +125,9 @@ nav ul li:not(:last-child){
 
                         /* 2eme partie */
 
-#comment img{
-    margin-left: 25rem;
+#comment .ligne{
+   display: flex;
+   justify-content: center;
 }
 #comment .methode{
     text-align: center;
@@ -129,15 +135,237 @@ nav ul li:not(:last-child){
 }
 .m{
     display: block;
+    margin-bottom: 2rem;
 }
 .methode a{
+    margin-top: 2rem;
+    color:rgb(224,63,63) ;
+    padding: 0.5rem 2rem;
+    border: 2px solid rgb(224,63,63);
+    border-radius: 3px;
+    transition: 0.25s ease;
+    
+}
+.methode a:hover{
+    background-color: rgb(224, 63, 63);
+    color: white;
+}
+.methode{
+    margin-bottom: 3rem;
+}
+
+
+            /* 3eme partie */
+
+
+.moyen1{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 1rem 5rem;
+}
+.moyen2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1rem 5rem;
+}
+
+.coeur,.main,.fusee,.puzzle{
+    margin: 2rem;
+}
+  
+.coeur,.main,.fusee,.puzzle, h4{
+    font-size: 1.3rem;
+}
+
+.n{
+    display: block;
+}
+
+.coeur img,.main img,.fusee img,.puzzle img{
+    width: 75px;
+    height: 75px;
+}
+
+                /* 4eme partie */
+
+
+.accompagnements{
+    text-align: center;
+}
+.aa{
+    padding-bottom: 3rem;
+}
+.aa h3{
+    margin-bottom: 0;
+}
+.aa p{
+    margin-top: 0;
+}
+.ab p{
+    margin:0;
+}
+
+
+
+
+                    /* 5eme partie */
+
+
+
+.decouvre{
+    margin: 4rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.peps{
+    display: block;
+}
+.decouvre li{
+    margin-right: 2rem;
+}
+.decouvre a{
+    margin-top: 2rem;
     color:rgb(224,63,63) ;
     padding: 0.5rem 2rem;
     border: 2px solid rgb(224,63,63);
     border-radius: 3px;
     transition: 0.25s ease;
 }
-.methode a:hover{
+.decouvre a:hover{
     background-color: rgb(224, 63, 63);
     color: white;
+}
+.talent h3 .peps {
+    position: relative;
+}
+.talent div{
+    background-color: aqua;
+    width: 150px;
+    height: 15px;
+    position: absolute;
+    ;
+    
+}
+
+
+
+                /* 6eme partie */
+
+
+
+#temoin h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.com{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+.com>article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid aqua;
+    margin: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+.com>article>img{
+   margin-top: -3rem;
+   border: 10px solid white; 
+}
+
+
+                /* 7eme partie */
+
+#blog{
+    text-align: center;
+}
+.super{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid aqua;
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+
+}
+.right{
+    text-align: start;
+    margin-left: 5rem;
+    padding-left: 4rem;
+    height: auto;
+}
+.right a{
+    margin-top: 2rem;
+    color:rgb(224,63,63) ;
+    padding: 0.5rem 2rem;
+    border: 2px solid rgb(224,63,63);
+    border-radius: 3px;
+    transition: 0.25s ease;
+    
+}
+.right a:hover{
+    background-color: rgb(224, 63, 63);
+    color: white;
+}
+.ent{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+}
+.ent>div>img{
+    margin-right: 3rem;
+}
+
+            /* footer */
+
+footer{
+    background-color: rgb(231, 221, 209);
+    text-align: center;
+}
+.foot{
+    display: flex;
+    justify-content: end;
+}
+.nou{
+    text-align: start;
+    border-left: 2px solid black;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+.nou a{
+    color: black;
+    transition: 0.25s ease;
+}
+.nou address{
+    display: flex;
+    flex-direction: column;
+}
+.nou a:hover{
+    font-size: 1.5rem;
+}
+.foot img{
+    object-fit: cover;
+    overflow: visible;
+    margin-right: 2rem;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer li a{
+    color: black;
+    margin: 0 1rem;
+}
+footer li:not(:last-child){
+    border-right: 1px solid black
 }
